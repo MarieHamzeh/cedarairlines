@@ -1,0 +1,193 @@
+.flight-detail-hero {
+  background: var(--navy-900);
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.flight-detail-hero-text {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+  color: white;
+}
+
+.flight-detail-hero-text h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.flight-detail-hero-text p {
+  color: var(--grey-300);
+  margin: 0;
+  font-size: 14px;
+}
+
+.flight-detail-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 40px 100px;
+}
+
+.flight-summary-card {
+  background: white;
+  border: 1px solid var(--grey-300);
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+
+.flight-summary-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.flight-summary-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.flight-summary-arrow {
+  font-size: 20px;
+  color: var(--grey-600);
+}
+
+.flight-summary-row .label {
+  font-size: 12px;
+  color: var(--grey-600);
+  font-weight: 500;
+}
+
+.flight-summary-row .value {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.flight-summary-row .sub {
+  font-size: 13px;
+  color: var(--grey-600);
+}
+
+.flight-duration {
+  margin: 16px 0 0;
+  font-size: 13px;
+  color: var(--grey-600);
+  border-top: 1px solid var(--grey-300);
+  padding-top: 12px;
+}
+
+.flight-detail-content h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--navy-900);
+  margin: 0 0 20px;
+}
+
+.class-packages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.class-package {
+  background: white;
+  border: 1px solid var(--grey-300);
+  border-radius: 6px;
+  padding: 24px;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.class-package:hover {
+  border-color: var(--navy-900);
+}
+
+.class-package h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy-900);
+  margin: 0 0 8px;
+}
+
+.class-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--navy-900);
+  margin: 0 0 16px;
+}
+
+.class-package ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.class-package ul li {
+  font-size: 13px;
+  color: var(--grey-600);
+  padding-left: 14px;
+  position: relative;
+}
+
+.class-package ul li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--amber-500);
+  font-weight: bold;
+}
+
+.class-availability {
+  font-size: 12px;
+  color: var(--grey-600);
+  margin: 0 0 16px;
+}
+
+.class-package button {
+  width: 100%;
+  background: var(--amber-500);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.class-package button:disabled {
+  background: var(--grey-300);
+  cursor: not-allowed;
+}
+
+.class-package button:not(:disabled):hover {
+  background: #b3872a;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 32px;
+  color: var(--navy-900);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--amber-500);
+}
+
+@media (max-width: 768px) {
+  .class-packages {
+    grid-template-columns: 1fr;
+  }
+}
+

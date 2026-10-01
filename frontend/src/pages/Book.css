@@ -1,0 +1,138 @@
+.book-hero {
+  position: relative;
+  height: 320px;
+  background-color: var(--navy-900);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  transition: background-image 0.4s ease;
+}
+
+.book-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11, 27, 51, 0.85), rgba(11, 27, 51, 0.35));
+}
+
+.book-hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px 32px;
+}
+
+.book-hero-text h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 34px;
+  font-weight: 500;
+  color: white;
+  margin: 0 0 6px;
+}
+
+.book-hero-text .book-subtitle {
+  color: var(--grey-300);
+  font-size: 15px;
+  margin: 0;
+  text-transform: capitalize;
+}.book-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+  min-height: 60vh;
+}
+
+.book-content h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0 0 8px;
+  color: var(--navy-900);
+}
+
+.book-subtitle {
+  color: var(--grey-600);
+  font-size: 15px;
+  margin: 0 0 32px;
+  text-transform: capitalize;
+}
+
+.book-error {
+  color: #b3261e;
+}
+
+.flight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.flight-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--grey-300);
+  border-radius: 6px;
+  padding: 20px 24px;
+  background: white;
+}
+
+.flight-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.flight-number {
+  font-size: 13px;
+  color: var(--grey-600);
+}
+
+.flight-route {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.flight-time {
+  font-size: 14px;
+  color: var(--grey-600);
+}
+
+.flight-price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.flight-price button {
+  background: var(--amber-500);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.flight-price button:hover {
+  background: #b3872a;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 32px;
+  color: var(--navy-900);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--amber-500);
+}
